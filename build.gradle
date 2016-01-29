@@ -3,10 +3,6 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'application'
 
-plugins {
-    id 'com.stehno.natives' version '0.2.4'
-}
-
 sourceCompatibility = 1.8
 
 // Source sets in the project, specify source directories
@@ -41,5 +37,6 @@ dependencies {
     compile group: 'org.slick2d', name: 'slick2d-core', version: '1.0.1'
     compile group: 'com.google.guava', name: 'guava', version: '19.0'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+    compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6'
     compile fileTree(dir: 'libs', include: '*.jar')
 }

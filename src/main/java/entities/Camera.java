@@ -15,7 +15,7 @@ public class Camera {
 	private float roll;
 	
 	private Player player;
-	
+
 	public Camera(Player player){
 		this.player = player;
 	}
@@ -26,16 +26,19 @@ public class Camera {
 		float horizontalDistance = calculateHorizontalDistance();
 		float verticalDistance = calculateVerticalDistance();
 		calculateCameraPosition(horizontalDistance, verticalDistance);
-		this.yaw = 180 - player.getRotY();
-		yaw%=360;
+		calculateYaw();
 	}
 
-    public void invertPitch(){
+	public void invertPitch(){
 		this.pitch = -pitch;
 	}
 
 	public Vector3f getPosition() {
 		return position;
+	}
+
+	public Player getPlayer() {
+		return player;
 	}
 
 	public float getPitch() {
@@ -74,12 +77,17 @@ public class Camera {
 			distanceFromPlayer = 5;
 		}
 	}
-	
+
 	private void calculatePitch(){
 		if(Mouse.isButtonDown(1)){
 			float XangleChange = calculateYRotation();
 			player.increaseRotation(0,-XangleChange,0);
 		}
+	}
+
+	private void calculateYaw() {
+		this.yaw = 180 - player.getRotY();
+		yaw %= 360;
 	}
 
     private float calculateYRotation() {

@@ -47,4 +47,12 @@ public class Maths {
 		return viewMatrix;
 	}
 
+	public static float getDistanceBetweenVectors(Vector3f vector1, Vector3f vector2) {
+		return (float) Math.sqrt(
+				Math.pow(vector1.getX() - vector2.getX(), 2.0) +
+				Math.pow(vector1.getY() - vector2.getY(), 2.0) +
+				Math.pow(vector1.getZ() - vector2.getZ(), 2.0)
+		);
+	}
+
 }
