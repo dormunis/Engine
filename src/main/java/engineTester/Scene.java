@@ -55,7 +55,7 @@ public class Scene {
         setupPhysics();
 
         // handle entities
-        createBox(new Vector3f(0,0,30), BOX_SCALE);
+        createBox(new Vector3f(0,0,30));
         createPlayer(new Vector3f(0,0,0));
         camera = new Camera(player);
     }
@@ -64,15 +64,14 @@ public class Scene {
     }
 
 
-    private static void createBox(Vector3f boxPosition, float boxScale) {
+    private static void createBox(Vector3f boxPosition) {
         // box model creation
         TexturedModel boxModel = new TexturedModel(NormalMappedObjLoader.loadOBJ("cube", loader), new ModelTexture(loader.loadTexture("wall4")));
         boxModel.getTexture().setNormalMap(loader.loadTextureNormalMap("wall4"));
         boxModel.getTexture().setShineDamper(5);
         boxModel.getTexture().setReflectivity(1);
-        Entity box = new Entity(boxModel, boxPosition , new Vector3f(0,0,0), boxScale);
+        Entity box = new Entity(boxModel, boxPosition , new Vector3f(0,0,0), BOX_SCALE);
         box.setRestitution(0.2f);
-        box.setScale(8);
 
         normalMapEntities.add(box);
     }
