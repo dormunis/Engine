@@ -15,7 +15,6 @@ public class Player extends Entity {
 	private static final float CLOSENESS_THRESHOLD = 10;
 
 	public final float radius = 1;
-
 	public static final float RUN_SPEED = 80;
 	public static final float TURN_SPEED = 160;
 	public static final float GRAVITY = 0;

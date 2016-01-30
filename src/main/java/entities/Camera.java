@@ -8,6 +8,9 @@ public class Camera {
 	private static final float MINIMUM_PITCH = 5;
 	private static final float MAXIMUM_PITCH = 100;
 
+	private static final float MINIMUM_ZOOM = 10;
+	private static final float MAXIMUM_ZOOM = 150;
+
 	private boolean invertedCamera = false; // boolean, 1
 	private boolean invertedZoom = false; // boolean, 1
 	private float zoomIntensityModifier = 0.1f;
@@ -59,8 +62,10 @@ public class Camera {
 	private void increasePitch(int delta) {
 		pitch = Maths.constrain(pitch + (delta * pitchChangeModifier) * (invertedCamera ? 1 : -1), MINIMUM_PITCH, MAXIMUM_PITCH);
 	}
-	private void increaseAngleAroundPlayer(int delta) { angleAroundPlayer += delta * angleChangeModifier; }
-	private void increaseZoom(int delta) { zoom += (delta * zoomIntensityModifier) * (invertedZoom ? 1 : -1); }
+	private void increaseAngleAroundPlayer(int delta) {
+		angleAroundPlayer -= (delta * angleChangeModifier);
+	}
+	private void increaseZoom(int delta) { zoom = Maths.constrain(zoom + ((delta * zoomIntensityModifier) * (invertedZoom ? 1 : -1)), MINIMUM_ZOOM, MAXIMUM_ZOOM); }
 
 	public Vector3f getPosition() { return position; }
 	public float getPitch() { return pitch; }
