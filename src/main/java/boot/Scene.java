@@ -1,26 +1,26 @@
 package boot;
 
 import com.google.common.collect.Lists;
-import entities.Camera;
-import entities.Entity;
-import entities.Light;
-import entities.Player;
-import models.TexturedModel;
-import render.utils.NormalMappedObjLoader;
+import engine.entities.Camera;
+import engine.entities.Entity;
+import engine.entities.Light;
+import engine.entities.Player;
+import engine.models.TexturedModel;
+import engine.render.utils.NormalMappedObjLoader;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
 import org.lwjgl.util.vector.Vector4f;
-import particles.ParticleMaster;
-import particles.ParticleSystem;
-import textures.ParticleTexture;
-import render.DisplayManager;
-import render.utils.Loader;
-import render.MasterRenderer;
-import render.utils.ObjectLoader;
-import terrains.Terrain;
-import textures.ModelTexture;
+import engine.particles.ParticleMaster;
+import engine.particles.ParticleSystem;
+import engine.textures.ParticleTexture;
+import engine.render.DisplayManager;
+import engine.render.utils.Loader;
+import engine.render.MasterRenderer;
+import engine.render.utils.ObjectLoader;
+import engine.terrains.Terrain;
+import engine.textures.ModelTexture;
 
 import java.net.URISyntaxException;
 import java.util.Collections;
@@ -57,7 +57,7 @@ public class Scene {
         terrains = Collections.emptySet();
         setupPhysics();
 
-        // handle entities
+        // handle engine.entities
         createBox(new Vector3f(0,0,20));
         createPlayer(new Vector3f(0,0,0));
         createCosmicTexture();

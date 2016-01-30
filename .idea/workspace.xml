@@ -2,9 +2,131 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc6a7ced-b6e8-43ed-bccf-e8b76c412021" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/entities/Camera.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/entities/Entity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/entities/Light.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/entities/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/models/RawModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/models/TexturedModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/particles/Particle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/particles/ParticleMaster.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/particles/ParticleSystem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/shaders/ShaderProgram.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/shaders/StaticShader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/shaders/TerrainShader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/skybox/SkyboxRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/skybox/SkyboxShader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/terrains/HeightsGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/terrains/Terrain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/textures/ModelTexture.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/textures/TerrainTexture.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/textures/TerrainTexturePack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/textures/TextureData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/toolbox/FileHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/toolbox/Maths.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/toolbox/MousePicker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/water/WaterFrameBuffers.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/water/WaterRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/water/WaterShader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/water/WaterTile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/world/Biome.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/world/World.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/fnt/arial.fnt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/fnt/berlinSans.fnt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/fnt/candara.fnt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/fnt/crazyFont.fnt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/fnt/harrington.fnt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/fnt/harry.fnt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/fnt/segoe.fnt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/fnt/verdana.fnt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/map/arial.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/map/berlinSans.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/map/candara.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/map/crazyFont.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/map/harrington.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/map/harry.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/map/segoe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/fonts/map/verdana.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/entities/Camera.java" afterPath="$PROJECT_DIR$/src/main/java/engine/entities/Camera.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/entities/Entity.java" afterPath="$PROJECT_DIR$/src/main/java/engine/entities/Entity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/entities/Light.java" afterPath="$PROJECT_DIR$/src/main/java/engine/entities/Light.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/entities/Player.java" afterPath="$PROJECT_DIR$/src/main/java/engine/entities/Player.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/fonts/Character.java" afterPath="$PROJECT_DIR$/src/main/java/engine/fonts/Character.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/fonts/FontType.java" afterPath="$PROJECT_DIR$/src/main/java/engine/fonts/FontType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/fonts/GUIText.java" afterPath="$PROJECT_DIR$/src/main/java/engine/fonts/GUIText.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/fonts/Line.java" afterPath="$PROJECT_DIR$/src/main/java/engine/fonts/Line.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/fonts/MetaFile.java" afterPath="$PROJECT_DIR$/src/main/java/engine/fonts/MetaFile.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/fonts/TextMaster.java" afterPath="$PROJECT_DIR$/src/main/java/engine/fonts/TextMaster.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/fonts/TextMeshCreator.java" afterPath="$PROJECT_DIR$/src/main/java/engine/fonts/TextMeshCreator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/fonts/TextMeshData.java" afterPath="$PROJECT_DIR$/src/main/java/engine/fonts/TextMeshData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/fonts/Word.java" afterPath="$PROJECT_DIR$/src/main/java/engine/fonts/Word.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/ModelData.java" afterPath="$PROJECT_DIR$/src/main/java/engine/models/ModelData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/RawModel.java" afterPath="$PROJECT_DIR$/src/main/java/engine/models/RawModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/TexturedModel.java" afterPath="$PROJECT_DIR$/src/main/java/engine/models/TexturedModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/particles/Particle.java" afterPath="$PROJECT_DIR$/src/main/java/engine/particles/Particle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/particles/ParticleMaster.java" afterPath="$PROJECT_DIR$/src/main/java/engine/particles/ParticleMaster.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/particles/ParticleSystem.java" afterPath="$PROJECT_DIR$/src/main/java/engine/particles/ParticleSystem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/DisplayManager.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/DisplayManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/MasterRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/MasterRenderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/renderers/EntityRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/renderers/EntityRenderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/renderers/FontRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/renderers/FontRenderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/renderers/GuiRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/renderers/GuiRenderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/renderers/NormalMappingRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/renderers/NormalMappingRenderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/renderers/ParticleRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/renderers/ParticleRenderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/renderers/TerrainRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/renderers/TerrainRenderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/utils/Loader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/utils/Loader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/utils/NormalMappedObjLoader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/utils/NormalMappedObjLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/utils/OBJFileLoader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/utils/OBJFileLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/render/utils/ObjectLoader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/utils/ObjectLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/shaders/FontShader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/shaders/FontShader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/shaders/GuiShader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/shaders/GuiShader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/shaders/NormalMappingShader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/shaders/NormalMappingShader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/shaders/ParticleShader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/shaders/ParticleShader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/shaders/ShaderProgram.java" afterPath="$PROJECT_DIR$/src/main/java/engine/shaders/ShaderProgram.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/shaders/StaticShader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/shaders/StaticShader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/shaders/TerrainShader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/shaders/TerrainShader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/skybox/SkyboxRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/engine/render/renderers/SkyboxRenderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/skybox/SkyboxShader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/shaders/SkyboxShader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/terrains/HeightsGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/engine/terrains/HeightsGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/terrains/Terrain.java" afterPath="$PROJECT_DIR$/src/main/java/engine/terrains/Terrain.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/textures/GuiTexture.java" afterPath="$PROJECT_DIR$/src/main/java/engine/textures/GuiTexture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/textures/ModelTexture.java" afterPath="$PROJECT_DIR$/src/main/java/engine/textures/ModelTexture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/textures/ParticleTexture.java" afterPath="$PROJECT_DIR$/src/main/java/engine/textures/ParticleTexture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/textures/TerrainTexture.java" afterPath="$PROJECT_DIR$/src/main/java/engine/textures/TerrainTexture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/textures/TerrainTexturePack.java" afterPath="$PROJECT_DIR$/src/main/java/engine/textures/TerrainTexturePack.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/textures/TextureData.java" afterPath="$PROJECT_DIR$/src/main/java/engine/textures/TextureData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/toolbox/Colliders.java" afterPath="$PROJECT_DIR$/src/main/java/engine/toolbox/Colliders.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/toolbox/FileHandler.java" afterPath="$PROJECT_DIR$/src/main/java/engine/toolbox/FileHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/toolbox/InsertionSort.java" afterPath="$PROJECT_DIR$/src/main/java/engine/toolbox/InsertionSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/toolbox/Maths.java" afterPath="$PROJECT_DIR$/src/main/java/engine/toolbox/Maths.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/toolbox/MousePicker.java" afterPath="$PROJECT_DIR$/src/main/java/engine/toolbox/MousePicker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/toolbox/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/engine/toolbox/Utils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/toolbox/Vertex.java" afterPath="$PROJECT_DIR$/src/main/java/engine/toolbox/Vertex.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/water/WaterFrameBuffers.java" afterPath="$PROJECT_DIR$/src/main/java/engine/water/WaterFrameBuffers.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/water/WaterRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/engine/water/WaterRenderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/water/WaterShader.java" afterPath="$PROJECT_DIR$/src/main/java/engine/water/WaterShader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/water/WaterTile.java" afterPath="$PROJECT_DIR$/src/main/java/engine/water/WaterTile.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/world/Biome.java" afterPath="$PROJECT_DIR$/src/main/java/engine/world/Biome.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/world/World.java" afterPath="$PROJECT_DIR$/src/main/java/engine/world/World.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/fnt/arial.fnt" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/fnt/arial.fnt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/fnt/berlinSans.fnt" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/fnt/berlinSans.fnt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/fnt/candara.fnt" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/fnt/candara.fnt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/fnt/crazyFont.fnt" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/fnt/crazyFont.fnt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/fnt/harrington.fnt" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/fnt/harrington.fnt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/fnt/harry.fnt" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/fnt/harry.fnt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/fnt/segoe.fnt" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/fnt/segoe.fnt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/fnt/verdana.fnt" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/fnt/verdana.fnt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/map/arial.png" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/map/arial.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/map/berlinSans.png" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/map/berlinSans.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/map/candara.png" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/map/candara.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/map/crazyFont.png" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/map/crazyFont.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/map/harrington.png" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/map/harrington.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/map/harry.png" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/map/harry.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/map/segoe.png" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/map/segoe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/map/verdana.png" afterPath="$PROJECT_DIR$/src/main/resources/engine/fonts/map/verdana.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/Camera.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Camera.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/Player.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/boot/Main.java" afterPath="$PROJECT_DIR$/src/main/java/boot/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/boot/Scene.java" afterPath="$PROJECT_DIR$/src/main/java/boot/Scene.java" />
     </list>
     <ignored path="GameEngine3D.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,44 +179,60 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/boot/Scene.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="171" column="24" selection-start-line="171" selection-start-column="24" selection-end-line="171" selection-end-column="24" />
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Entity.java">
+      <file leaf-file-name="MasterRenderer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/MasterRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Camera.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Camera.java">
+      <file leaf-file-name="StaticShader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/StaticShader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2395#2396#0" expanded="true" />
-                <element signature="e#2452#2453#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Player.java">
+      <file leaf-file-name="ShaderProgram.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/ShaderProgram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.32786885">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/boot/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/engine/toolbox/FileHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29508197">
+              <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,6 +244,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -476,7 +615,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/skybox/SkyboxRenderer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/toolbox/FileHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/textures/ModelTexture.java" />
         <option value="$PROJECT_DIR$/src/main/java/renderEngine/Loader.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -490,7 +628,6 @@
         <option value="$PROJECT_DIR$/src/main/java/toolbox/Quad.java" />
         <option value="$PROJECT_DIR$/src/main/resources/objects/cube2.obj" />
         <option value="$PROJECT_DIR$/src/main/resources/objects/cube.obj" />
-        <option value="$PROJECT_DIR$/src/main/java/toolbox/Colliders.java" />
         <option value="$PROJECT_DIR$/src/main/java/engine/engineTester/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/engineTester/GUIView.java" />
         <option value="$PROJECT_DIR$/src/main/java/engineTester/Main.java" />
@@ -504,11 +641,21 @@
         <option value="$PROJECT_DIR$/src/main/java/render/utils/NormalMappedObjLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/toolbox/NormalVertex.java" />
         <option value="$PROJECT_DIR$/src/main/java/particles/ParticleMaster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/toolbox/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/render/utils/OBJFileLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/render/utils/ObjectLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Camera.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/boot/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/particles/ParticleSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/textures/ParticleTexture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/terrains/HeightsGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shaders/SkyboxShader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/toolbox/Colliders.java" />
+        <option value="$PROJECT_DIR$/src/main/java/toolbox/FileHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/toolbox/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/world/Biome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/world/World.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/toolbox/FileHandler.java" />
       </list>
     </option>
   </component>
@@ -618,58 +765,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameEngine3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameEngine3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1036,8 +1131,8 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/toolbox/Colliders.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/src/main/java/engine/toolbox/Colliders.java</url>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1058,235 +1153,55 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/shaders/GuiShader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/fonts/MetaFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shaders/ParticleShader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17704917">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shaders/NormalMappingShader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23606557">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slick2d/slick2d-core/1.0.1/22e1d87a492f362042c4e23319e6930acb709a63/slick2d-core-1.0.1-sources.jar!/org/newdawn/slick/opengl/TextureLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327869">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49295774">
-          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/objects/sphere.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2816901">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/textures/ModelTexture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03900325">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/RawModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03900325">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/TexturedModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11700975">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="e#347#348#0" expanded="false" />
-            <element signature="e#368#369#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/MasterRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.37540984">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/toolbox/MousePicker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11803278">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.3/ca58b77b6393794ca34e12b32e9c6d9c912acb3/lwjgl_util-2.9.3-sources.jar!/org/lwjgl/util/vector/Vector3f.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327869">
-          <caret line="234" column="24" selection-start-line="234" selection-start-column="24" selection-end-line="234" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.3/ca58b77b6393794ca34e12b32e9c6d9c912acb3/lwjgl_util-2.9.3-sources.jar!/org/lwjgl/util/glu/Quadric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327869">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/objects/box.obj">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/fonts/TextMaster.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/objects/cube2.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46885246">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/shaders/vertexShader.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.055737704">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/toolbox/Colliders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019501625">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/boot/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5606557">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/toolbox/Maths.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/fonts/TextMeshCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/shaders/fragmentShader.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019501625">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shaders/TerrainShader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/particles/ParticleSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0780065">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shaders/ShaderProgram.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/particles/ParticleMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0780065">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.25893825">
+          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shaders/StaticShader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/particles/Particle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.156013">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.097508125">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/utils/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.028169">
-          <caret line="118" column="56" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/DisplayManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33694476">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shaders/FontShader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/renderers/EntityRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/renderers/TerrainRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/textures/GuiTexture.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/models/TexturedModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0780065">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -1294,15 +1209,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fonts/TextMaster.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/models/RawModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0780065">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.03900325">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/ModelData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/models/ModelData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.312026">
           <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
@@ -1310,130 +1225,290 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/utils/NormalMappedObjLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/fonts/Word.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5655471">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/toolbox/InsertionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2340195">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.17551462">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.3/ca58b77b6393794ca34e12b32e9c6d9c912acb3/lwjgl_util-2.9.3-sources.jar!/org/lwjgl/util/vector/Vector2f.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/fonts/TextMeshData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/toolbox/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#656#657#0" expanded="false" />
-            <element signature="e#712#713#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9737705">
-          <caret line="33" column="69" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/objects/rocks.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.298361">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/objects/cube.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8852459">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/objects/crate.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.870492">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/toolbox/Vertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11803278">
+        <state vertical-scroll-proportion="0.13651137">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/utils/OBJFileLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/renderers/EntityRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0530877">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/renderers/NormalMappingRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.704918">
-          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/renderers/FontRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/renderers/FontRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40983605">
+        <state vertical-scroll-proportion="0.0">
           <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/particles/ParticleMaster.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/renderers/GuiRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39180326">
-          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/utils/ObjectLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/renderers/ParticleRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38360655">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/render/renderers/ParticleRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327869">
+        <state vertical-scroll-proportion="0.0">
           <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/renderers/TerrainRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/renderers/NormalMappingRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/DisplayManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/FontShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/GuiShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/NormalMappingShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/ParticleShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/TerrainShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/renderers/SkyboxRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/SkyboxShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/terrains/HeightsGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/terrains/Terrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/textures/GuiTexture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/textures/ModelTexture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/textures/ParticleTexture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/textures/TerrainTexture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/textures/TerrainTexturePack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/textures/TextureData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/toolbox/Colliders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/toolbox/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/toolbox/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0780065">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/toolbox/Vertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0780065">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/water/WaterFrameBuffers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0780065">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/water/WaterRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0780065">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/world/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0780065">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/world/Biome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33261105">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/water/WaterTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03900325">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/water/WaterShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0780065">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/toolbox/MousePicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0780065">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/toolbox/Maths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0780065">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1441,38 +1516,50 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/boot/Scene.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="171" column="24" selection-start-line="171" selection-start-column="24" selection-end-line="171" selection-end-column="24" />
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Entity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/render/MasterRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Camera.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/boot/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/ShaderProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/shaders/StaticShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/toolbox/FileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.32786885">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.29508197">
+          <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,13 +1,10 @@
 package boot;
 
-import toolbox.FileHandler;
+import engine.toolbox.FileHandler;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
 
-/**
- * Created by dormunis on 29/1/2016.
- */
 public class Main {
 
     public static FileHandler fileHandler;
