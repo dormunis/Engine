@@ -15,33 +15,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.lwjgl.lwjgl:lwjgl:2.9.3" level="project" />
-    <orderEntry type="module-library">
-      <library name="windows">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/natives/lwjgl-platform-2.9.3-natives-windows.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="linux">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/natives/lwjgl-platform-2.9.3-natives-linux.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="osx">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/natives/lwjgl-platform-2.9.3-natives-osx.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="Gradle: net.java.jinput:jinput:2.0.5" level="project" />
     <orderEntry type="library" name="Gradle: net.java.jutils:jutils:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: net.java.jinput:jinput-platform:2.0.5:natives-linux" level="project" />
@@ -63,5 +36,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maze3dExtended" level="project" />
   </component>
 </module>

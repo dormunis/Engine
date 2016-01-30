@@ -70,17 +70,6 @@ public class Entity {
 		this.model = model;
 	}
 
-	public boolean isColliding(Entity other) { // only box meshes for now, no rotation supported
-		float scale = other.getScale();
-		other.getModel().getRawModel().getVaoID();
-
-		return false;
-	}
-
-//	public Vector3f getDistanceFrom(Entity entity) {
-//		Maths.getDistanceBetween(position, entity.getPosition());
-//	}
-
 	public float getRestitution() {
 		return restitution;
 	}

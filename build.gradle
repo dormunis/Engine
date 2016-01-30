@@ -3,11 +3,7 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'application'
 
-plugins {
-    id 'com.stehno.natives' version '0.2.4'
-}
-
-sourceCompatibility = 1.8
+sourceCompatibility = 2.1
 
 // Source sets in the project, specify source directories
 sourceSets {
@@ -30,10 +26,6 @@ natives {
     platforms = 'linux'
 }
 
-//run {
-//    systemProperty 'java.library.path', file( 'build/natives/linux' )
-//}
-
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     compile group: 'org.lwjgl.lwjgl', name:'lwjgl', version: '2.9.3'
@@ -41,5 +33,6 @@ dependencies {
     compile group: 'org.slick2d', name: 'slick2d-core', version: '1.0.1'
     compile group: 'com.google.guava', name: 'guava', version: '19.0'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+    compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6'
     compile fileTree(dir: 'libs', include: '*.jar')
 }
