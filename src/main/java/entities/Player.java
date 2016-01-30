@@ -53,11 +53,11 @@ public class Player extends Entity {
 	}
 
 	private Vector3f calculateVelocity() {
-		super.increaseRotation(0, currentTurnSpeed * DisplayManager.getFrameTimeSeconds(), 0);
 		float distance = currentSpeed * DisplayManager.getFrameTimeSeconds();
 		float dx = (float) (distance * Math.sin(Math.toRadians(super.getRotY())));
 		float dy = 0;
 		float dz = (float) (distance * Math.cos(Math.toRadians(super.getRotY())));
+		super.increaseRotation(0, currentTurnSpeed * DisplayManager.getFrameTimeSeconds(), 0);
 		return new Vector3f(dx,dy,dz);
 	}
 

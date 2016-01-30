@@ -41,6 +41,7 @@ public class Maths {
 		Matrix4f.rotate((float) Math.toRadians(camera.getPitch()), new Vector3f(1, 0, 0), viewMatrix,
 				viewMatrix);
 		Matrix4f.rotate((float) Math.toRadians(camera.getYaw()), new Vector3f(0, 1, 0), viewMatrix, viewMatrix);
+//		Matrix4f.rotate((float) Math.toRadians(camera.getRoll()), new Vector3f(0, 0, 1), viewMatrix, viewMatrix);
 		Vector3f cameraPos = camera.getPosition();
 		Vector3f negativeCameraPos = new Vector3f(-cameraPos.x,-cameraPos.y,-cameraPos.z);
 		Matrix4f.translate(negativeCameraPos, viewMatrix, viewMatrix);
@@ -53,6 +54,14 @@ public class Maths {
 				Math.pow(vector1.getY() - vector2.getY(), 2.0) +
 				Math.pow(vector1.getZ() - vector2.getZ(), 2.0)
 		);
+	}
+
+	public static float constrain(float val, float min, float max) {
+		if (val <= min)
+			return min;
+		if (val >= max)
+			return max;
+		return val;
 	}
 
 }

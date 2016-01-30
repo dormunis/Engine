@@ -8,6 +8,7 @@ import entities.Player;
 import models.TexturedModel;
 import normalMappingObjConverter.NormalMappedObjLoader;
 import org.lwjgl.input.Keyboard;
+import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
 import org.lwjgl.util.vector.Vector4f;
@@ -146,22 +147,51 @@ public class Scene {
     }
 
     private static void input() {
-        if (Keyboard.isKeyDown(Keyboard.KEY_W)) {
+        mouseControls();
+        keyboardControls();
+    }
+
+    private static void mouseControls() {
+        int dx = 0;
+        int dy = 0;
+        int dz = 0;
+        int zoom = Mouse.getDWheel();
+
+        if (Mouse.isButtonDown(1)) {
+            dx = Mouse.getX();
+            dy = Mouse.getY();
+        }
+
+        if (Mouse.isButtonDown(0)) {
+            dx = Mouse.getX();
+            dy = Mouse.getY();
+            camera.setOffsetCamera(true);
+        } else
+            camera.setOffsetCamera(false);
+
+        camera.storeInput(dx, dy, dz, zoom);
+    }
+
+    private static void keyboardControls() {
+        // forward movement
+        if (Keyboard.isKeyDown(Keyboard.KEY_W))
             player.currentSpeed = Player.RUN_SPEED;
-        } else if (Keyboard.isKeyDown(Keyboard.KEY_S)) {
+
+        else if (Keyboard.isKeyDown(Keyboard.KEY_S))
             player.currentSpeed = -Player.RUN_SPEED;
-        } else {
+
+        else
             player.currentSpeed = 0;
-        }
 
-        if (Keyboard.isKeyDown(Keyboard.KEY_D)) {
+        //strafing movement
+        if (Keyboard.isKeyDown(Keyboard.KEY_D))
             player.currentTurnSpeed = -Player.TURN_SPEED;
-        } else if (Keyboard.isKeyDown(Keyboard.KEY_A)) {
-            player.currentTurnSpeed = Player.TURN_SPEED;
-        } else {
-            player.currentTurnSpeed = 0;
-        }
 
+        else if (Keyboard.isKeyDown(Keyboard.KEY_A))
+            player.currentTurnSpeed = Player.TURN_SPEED;
+
+        else
+            player.currentTurnSpeed = 0;
     }
 
 }
