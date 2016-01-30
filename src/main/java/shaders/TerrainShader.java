@@ -2,7 +2,7 @@ package shaders;
 
 import java.util.List;
 
-import engineTester.Main;
+import boot.Main;
 import org.lwjgl.util.vector.Matrix4f;
 import org.lwjgl.util.vector.Vector3f;
 import org.lwjgl.util.vector.Vector4f;

@@ -3,7 +3,7 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'application'
 
-sourceCompatibility = 2.1
+sourceCompatibility = 1.8
 
 // Source sets in the project, specify source directories
 sourceSets {
@@ -13,7 +13,7 @@ sourceSets {
     }
 }
 
-mainClassName = 'engineTester.Main'
+mainClassName = 'boot.Main'
 
 repositories {
     mavenCentral()

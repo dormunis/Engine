@@ -3,7 +3,8 @@ package particles;
 import org.lwjgl.util.vector.Matrix4f;
 import org.lwjgl.util.vector.Vector3f;
 import org.lwjgl.util.vector.Vector4f;
-import renderEngine.DisplayManager;
+import render.DisplayManager;
+import textures.ParticleTexture;
 
 import java.util.Random;
 

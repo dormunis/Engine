@@ -5,7 +5,9 @@ import entities.Camera;
 import entities.Player;
 import org.lwjgl.util.vector.Vector2f;
 import org.lwjgl.util.vector.Vector3f;
-import renderEngine.DisplayManager;
+import render.DisplayManager;
+import render.renderers.ParticleRenderer;
+import textures.ParticleTexture;
 
 public class Particle {
 

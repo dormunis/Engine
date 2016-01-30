@@ -2,7 +2,10 @@ package particles;
 
 import entities.Camera;
 import org.lwjgl.util.vector.Matrix4f;
-import renderEngine.Loader;
+import render.renderers.ParticleRenderer;
+import render.utils.Loader;
+import textures.ParticleTexture;
+import toolbox.InsertionSort;
 
 import java.util.*;
 

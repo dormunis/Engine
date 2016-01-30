@@ -1,6 +1,6 @@
 package water;
 
-import engineTester.Main;
+import boot.Main;
 import org.lwjgl.util.vector.Matrix4f;
 
 import shaders.ShaderProgram;

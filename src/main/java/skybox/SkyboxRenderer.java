@@ -8,8 +8,8 @@ import org.lwjgl.opengl.GL20;
 import org.lwjgl.opengl.GL30;
 import org.lwjgl.util.vector.Matrix4f;
 
-import renderEngine.DisplayManager;
-import renderEngine.Loader;
+import render.DisplayManager;
+import render.utils.Loader;
 import entities.Camera;
 
 public class SkyboxRenderer {

@@ -2,7 +2,7 @@ package world;
 
 import entities.Entity;
 import models.TexturedModel;
-import renderEngine.Loader;
+import render.utils.Loader;
 import terrains.Terrain;
 import textures.TerrainTexture;
 import textures.TerrainTexturePack;

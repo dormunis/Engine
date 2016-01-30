@@ -5,7 +5,7 @@ import models.RawModel;
 import org.lwjgl.util.vector.Vector2f;
 import org.lwjgl.util.vector.Vector3f;
 
-import renderEngine.Loader;
+import render.utils.Loader;
 import textures.TerrainTexture;
 import textures.TerrainTexturePack;
 import toolbox.Maths;
