@@ -2,9 +2,7 @@ package terrains;
 
 import java.util.Random;
 
-/**
- * Created by Vtboy on 1/11/2016.
- */
+
 public class HeightsGenerator {
     private static final float AMPLITUDE = 60f;
     private static final int OCTAVES = 3;
@@ -15,7 +13,7 @@ public class HeightsGenerator {
     private int xOffset = 0;
     private int zOffset = 0;
 
-    public HeightsGenerator(int sead) {
+    public HeightsGenerator(int seed) {
         this.seed = seed;
     }
 

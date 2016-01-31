@@ -109,8 +109,8 @@ public class Scene {
     private static void initiateGameLoop() {
         while (!Display.isCloseRequested()) {
             render();
-            logic();
             input();
+            logic();
             update();
         }
     }
