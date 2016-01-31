@@ -6,7 +6,6 @@ import entities.Entity;
 import entities.Light;
 import entities.Player;
 import models.TexturedModel;
-import render.utils.NormalMappedObjLoader;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
@@ -14,13 +13,14 @@ import org.lwjgl.util.vector.Vector3f;
 import org.lwjgl.util.vector.Vector4f;
 import particles.ParticleMaster;
 import particles.ParticleSystem;
-import textures.ParticleTexture;
 import render.DisplayManager;
-import render.utils.Loader;
 import render.MasterRenderer;
+import render.utils.Loader;
+import render.utils.NormalMappedObjLoader;
 import render.utils.ObjectLoader;
 import terrains.Terrain;
 import textures.ModelTexture;
+import textures.ParticleTexture;
 
 import java.net.URISyntaxException;
 import java.util.Collections;
@@ -65,6 +65,7 @@ public class Scene {
     }
 
     private static void setupPhysics() {
+        // TODO: TBD
     }
 
 
@@ -72,8 +73,8 @@ public class Scene {
         // box model creation
         TexturedModel boxModel = new TexturedModel(NormalMappedObjLoader.loadOBJ("cube", loader), new ModelTexture(loader.loadTexture("wall4")));
         boxModel.getTexture().setNormalMap(loader.loadTextureNormalMap("wall4"));
-        boxModel.getTexture().setShineDamper(5);
-        boxModel.getTexture().setReflectivity(1);
+        boxModel.getTexture().setShineDamper(1.8f);
+        boxModel.getTexture().setReflectivity(1.8f);
         Entity box = new Entity(boxModel, boxPosition, new Vector3f(0,0,0), BOX_SCALE);
         box.setScale(4);
 
@@ -158,16 +159,16 @@ public class Scene {
         int zoom = Mouse.getDWheel();
 
         if (Mouse.isButtonDown(1)) {
-            dx = Mouse.getX();
-            dy = Mouse.getY();
+            dx = Mouse.getDX();
+            dy = Mouse.getDY();
         }
 
         if (Mouse.isButtonDown(0)) {
-            dx = Mouse.getX();
-            dy = Mouse.getY();
-            camera.setOffsetCamera(true);
-        } else
-            camera.setOffsetCamera(false);
+            dx = Mouse.getDX();
+            dy = Mouse.getDY();
+            camera.unlockFromPlayer();
+        } else if (!camera.isLockedToPlayer())
+            camera.lockToPlayer();
 
         camera.storeInput(dx, dy, dz, zoom);
     }

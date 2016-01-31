@@ -9,16 +9,16 @@ import org.lwjgl.util.vector.Vector3f;
  */
 public class Colliders {
 
-    public static Vector3f checkCollision(Vector3f oldPos, Vector3f newPos) {
-        Vector3f collisionVector = new Vector3f(1,1,1);
-        Vector3f movementVector = Vector3f.sub(newPos, oldPos, null);
-
-        if (movementVector.length() > 0) {
-
-        }
-
-        return collisionVector;
-    }
+//    public static Vector3f checkCollision(Vector3f oldPos, Vector3f newPos) {
+//        Vector3f collisionVector = new Vector3f(1,1,1);
+//        Vector3f movementVector = Vector3f.sub(newPos, oldPos, null);
+//
+//        if (movementVector.length() > 0) {
+//
+//        }
+//
+//        return collisionVector;
+//    }
 
     public static boolean intersectsWith(Vector3f boxMin, Vector3f boxMax, Vector3f spherePosition, float sphereRadius) {
         float dmin = 0;

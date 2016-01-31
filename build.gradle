@@ -4,6 +4,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 sourceCompatibility = 1.8
+mainClassName = 'boot.Main'
 
 // Source sets in the project, specify source directories
 sourceSets {
@@ -13,17 +14,8 @@ sourceSets {
     }
 }
 
-mainClassName = 'boot.Main'
-
 repositories {
     mavenCentral()
-}
-
-natives {
-    jars = [ 'lwjgl-platform-2.9.3-natives-windows',
-             'lwjgl-platform-2.9.3-natives-osx',
-             'lwjgl-platform-2.9.3-natives-linux' ]
-    platforms = 'linux'
 }
 
 dependencies {
