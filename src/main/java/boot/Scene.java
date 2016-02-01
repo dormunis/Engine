@@ -23,14 +23,12 @@ import textures.ModelTexture;
 import textures.ParticleTexture;
 
 import java.net.URISyntaxException;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Scene {
 
-    private static final float BOX_SCALE = 1;
+    private static final float BOX_SCALE = 10;
 
     private static Set<Entity> entities = new HashSet<>();
     private static Set<Entity> normalMapEntities = new HashSet<>();
@@ -43,29 +41,41 @@ public class Scene {
     private static Loader loader;
     private static MasterRenderer renderer;
 
-    public static void run() throws URISyntaxException {
+    private static Set<Integer> keysPressedRightNow = new HashSet<>();
+    private static Set<Integer> keyBuffer = new HashSet<>();
+
+    public static void start(int[][][] maze) throws URISyntaxException {
         DisplayManager.createDisplay();
         loader = new Loader();
         renderer = new MasterRenderer(loader);
-        setup();
+        setup(maze);
         initiateGameLoop();
         cleanUp();
     }
 
-    private static void setup() {
+    private static void setup(int[][][] maze) {
         ParticleMaster.init(loader, renderer.getProjectionMatrix());
         terrains = Collections.emptySet();
         setupPhysics();
 
         // handle entities
-        createBox(new Vector3f(0,0,20));
-        createPlayer(new Vector3f(0,0,0));
+        for (int i = 0; i < maze.length; i++) {
+            for (int j = 0; j < maze[i].length; j++) {
+                for (int k = 0; k < maze[i][i].length; k++) {
+                    if (maze[i][j][k] != 0)
+                        createBox(new Vector3f(i*BOX_SCALE*2,j*BOX_SCALE*2,k*BOX_SCALE*2));
+                }
+            }
+        }
+
+
+        createPlayer(new Vector3f(0 * BOX_SCALE - (BOX_SCALE/2),4 * BOX_SCALE - (BOX_SCALE/2),1 * BOX_SCALE - (BOX_SCALE/2)));
         createCosmicTexture();
         camera = new Camera(player);
     }
 
     private static void setupPhysics() {
-        // TODO: TBD
+        // TODO: TBD for collision detection
     }
 
 
@@ -74,9 +84,9 @@ public class Scene {
         TexturedModel boxModel = new TexturedModel(NormalMappedObjLoader.loadOBJ("cube", loader), new ModelTexture(loader.loadTexture("wall4")));
         boxModel.getTexture().setNormalMap(loader.loadTextureNormalMap("wall4"));
         boxModel.getTexture().setShineDamper(1.8f);
-        boxModel.getTexture().setReflectivity(1.8f);
+        boxModel.getTexture().setReflectivity(2.8f);
         Entity box = new Entity(boxModel, boxPosition, new Vector3f(0,0,0), BOX_SCALE);
-        box.setScale(4);
+        box.setScale(BOX_SCALE);
 
         entities.add(box);
     }
@@ -172,25 +182,32 @@ public class Scene {
     }
 
     private static void keyboardControls() {
-        // forward movement
-        if (Keyboard.isKeyDown(Keyboard.KEY_W))
-            player.currentSpeed = Player.RUN_SPEED;
-
-        else if (Keyboard.isKeyDown(Keyboard.KEY_S))
-            player.currentSpeed = -Player.RUN_SPEED;
-
-        else
-            player.currentSpeed = 0;
+        float dx, dy, dz;
 
         //strafing movement
         if (Keyboard.isKeyDown(Keyboard.KEY_D))
-            player.currentTurnSpeed = -Player.TURN_SPEED;
-
+            dx = -Player.TURN_SPEED;
         else if (Keyboard.isKeyDown(Keyboard.KEY_A))
-            player.currentTurnSpeed = Player.TURN_SPEED;
-
+            dx = Player.TURN_SPEED;
         else
-            player.currentTurnSpeed = 0;
-    }
+            dx = 0;
 
+        // up and down movement
+        if (Keyboard.isKeyDown(Keyboard.KEY_SPACE))
+            dy = Player.VERTICAL_VECTOR_STRENGTH;
+        else if (Keyboard.isKeyDown(Keyboard.KEY_LSHIFT))
+            dy = -Player.VERTICAL_VECTOR_STRENGTH;
+        else
+            dy = 0;
+
+        // forward movement
+        if (Keyboard.isKeyDown(Keyboard.KEY_W))
+            dz = Player.RUN_SPEED;
+        else if (Keyboard.isKeyDown(Keyboard.KEY_S))
+            dz = -Player.RUN_SPEED;
+        else
+            dz = 0;
+
+        player.storeInput(dx,dy,dz);
+    }
 }

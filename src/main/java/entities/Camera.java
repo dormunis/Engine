@@ -8,8 +8,9 @@ public class Camera {
 	private static final float MINIMUM_PITCH = -300;
 	private static final float MAXIMUM_PITCH = 220;
 
-	private static final float MINIMUM_ZOOM = 10;
-	private static final float MAXIMUM_ZOOM = 150;
+	private static final float MINIMUM_ZOOM = 3;
+	private static final float OPTIMAL_ZOOM = 10;
+	private static final float MAXIMUM_ZOOM = 20;
 
 	private static final float BUFFER_DECREASE_RATIO = 0.12f;
 	private static final float MOUSE_SENSITIVITY_VERTICAL_OFFSET = 0.25f;
@@ -19,7 +20,7 @@ public class Camera {
 	private boolean lockToPlayer = true;
 
 	private Vector3f position = new Vector3f(0,0,0);
-	private float zoom = 50;
+	private float zoom = OPTIMAL_ZOOM;
 	private float angleAroundPlayer;
 
 	private float angleBuffer = 0;

@@ -14,12 +14,15 @@ public class Player extends Entity {
 
 	private static final float CLOSENESS_THRESHOLD = 10;
 
+	public static final float VERTICAL_VECTOR_STRENGTH = 1.2f;
+
 	public final float radius = 1;
 	public static final float RUN_SPEED = 80;
 	public static final float TURN_SPEED = 160;
 	public static final float GRAVITY = 0;
 
 	public float currentSpeed = 0;
+	public float currentVerticalSpeed = 0;
 	public float currentTurnSpeed = 0;
 
 	private Vector3f velocity;
@@ -57,7 +60,7 @@ public class Player extends Entity {
 		float dy = (float) -(distance * Math.sin(Math.toRadians(super.getRotX())));
 		float dz = (float) (distance * Math.cos(Math.toRadians(super.getRotY())));
 		super.increaseRotation(0, currentTurnSpeed * DisplayManager.getFrameTimeSeconds(), 0);
-		return new Vector3f(dx,dy,dz);
+		return new Vector3f(dx,dy+currentVerticalSpeed,dz);
 	}
 
 	public Vector3f getVelocity() {
@@ -70,5 +73,11 @@ public class Player extends Entity {
 
 	public float getRadius() {
 		return radius;
+	}
+
+	public void storeInput(float dx, float dy, float dz) {
+		currentTurnSpeed = dx;
+		currentVerticalSpeed = dy;
+		currentSpeed = dz;
 	}
 }
