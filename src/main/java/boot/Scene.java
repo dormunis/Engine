@@ -155,14 +155,12 @@ public class Scene {
     private static void mouseControls() {
         int dx = 0;
         int dy = 0;
-        int dz = 0;
         int zoom = Mouse.getDWheel();
 
         if (Mouse.isButtonDown(1)) {
             dx = Mouse.getDX();
             dy = Mouse.getDY();
         }
-
         if (Mouse.isButtonDown(0)) {
             dx = Mouse.getDX();
             dy = Mouse.getDY();
@@ -170,7 +168,7 @@ public class Scene {
         } else if (!camera.isLockedToPlayer())
             camera.lockToPlayer();
 
-        camera.storeInput(dx, dy, dz, zoom);
+        camera.storeInput(dx, dy, zoom);
     }
 
     private static void keyboardControls() {

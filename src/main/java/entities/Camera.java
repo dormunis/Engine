@@ -5,13 +5,14 @@ import toolbox.Maths;
 
 public class Camera {
 
-	private static final float MINIMUM_PITCH = -90;
-	private static final float MAXIMUM_PITCH = 90;
+	private static final float MINIMUM_PITCH = -300;
+	private static final float MAXIMUM_PITCH = 220;
 
 	private static final float MINIMUM_ZOOM = 10;
 	private static final float MAXIMUM_ZOOM = 150;
 
-	private static final float ANGLE_BUFFER_DECREASE_RATIO = 0.1f;
+	private static final float BUFFER_DECREASE_RATIO = 0.12f;
+	private static final float MOUSE_SENSITIVITY_VERTICAL_OFFSET = 0.25f;
 
 	private boolean invertedCamera = false; // boolean, 1
 	private boolean invertedZoom = false; // boolean, 1
@@ -20,10 +21,13 @@ public class Camera {
 	private Vector3f position = new Vector3f(0,0,0);
 	private float zoom = 50;
 	private float angleAroundPlayer;
+
 	private float angleBuffer = 0;
 	private float currentAngleBufferDecreaseConstant = 0;
+	private float pitchBuffer = 0;
+	private float currentPitchBufferDecreaseConstant = 0;
 
-	private float roll = 0; // roll = rotation around the x axis
+//	private float roll = 0; // roll = rotation around the x axis
 	private float pitch = 20; // pitch = rotation around the y axis
 	private float yaw = 0; // yaw = rotation around the z axis
 
@@ -45,7 +49,7 @@ public class Camera {
 
 	}
 
-	public void storeInput(int dx, int dy, int dz, int zoom) {
+	public void storeInput(int dx, int dy, int zoom) {
 		increaseAngleAroundPlayer(dx);
 		increasePitch(dy);
 		increaseZoom(zoom);
@@ -62,13 +66,27 @@ public class Camera {
 	}
 
 	private void calculateYaw() {
+		calculateAngleAroundPlayerBuffer();
+		calculatePitchBuffer();
+		yaw = 180 - (player.getRotY() + angleAroundPlayer);
+	}
+
+	private void calculateAngleAroundPlayerBuffer() {
 		if ((currentAngleBufferDecreaseConstant > 0 && angleBuffer > 0) || (currentAngleBufferDecreaseConstant < 0 && angleBuffer < 0)) {
 			angleBuffer -= currentAngleBufferDecreaseConstant;
 			angleAroundPlayer -= currentAngleBufferDecreaseConstant;
 		}
 		else
 			currentAngleBufferDecreaseConstant = 0;
-		yaw = 180 - (player.getRotY() + angleAroundPlayer);
+	}
+
+	private void calculatePitchBuffer() {
+		if ((currentPitchBufferDecreaseConstant > 0 && pitchBuffer > 0) || (currentPitchBufferDecreaseConstant < 0 && pitchBuffer < 0)) {
+			pitchBuffer -= currentPitchBufferDecreaseConstant;
+			pitch -= currentPitchBufferDecreaseConstant;
+		}
+		else
+			currentPitchBufferDecreaseConstant = 0;
 	}
 
 	private float calculateHorizontalDistance() { return (float) (zoom * Math.cos(Math.toRadians(pitch))); }
@@ -76,24 +94,25 @@ public class Camera {
 
 	private void increasePitch(int delta) {
 		float pitchChange = (delta * mouseSensitivity) * (invertedCamera ? 1 : -1);
-//		if (lockToPlayer)
-//			player.increaseRotation(pitchChange,0,0);
-//		else
-			pitch = Maths.constrain(pitch + pitchChange, MINIMUM_PITCH, MAXIMUM_PITCH);
+		if (lockToPlayer)
+			player.increaseRotation(pitchChange,0,0);
+		pitch = Maths.constrain(pitch + pitchChange, MINIMUM_PITCH, MAXIMUM_PITCH);
 	}
+
 	private void increaseAngleAroundPlayer(int delta) {
-		float angleChange = delta * mouseSensitivity;
+		float angleChange = delta * (mouseSensitivity + MOUSE_SENSITIVITY_VERTICAL_OFFSET);
 		if (lockToPlayer)
 			player.increaseRotation(0,-angleChange,0);
 		else
 			angleAroundPlayer = angleAroundPlayer - angleChange;
 	}
+
 	private void increaseZoom(int delta) { zoom = Maths.constrain(zoom + ((delta * zoomIntensityModifier) * (invertedZoom ? 1 : -1)), MINIMUM_ZOOM, MAXIMUM_ZOOM); }
 
 	public Vector3f getPosition() { return position; }
 	public float getPitch() { return pitch; }
 	public float getYaw() { return yaw;	}
-	public float getRoll() { return roll; }
+//	public float getRoll() { return roll; }
 	public boolean isInvertedZoom() { return invertedZoom; }
 	public void setInvertedZoom(boolean invertedZoom) { this.invertedZoom = invertedZoom; }
 	public float getZoomIntensityModifier() { return zoomIntensityModifier; }
@@ -106,7 +125,9 @@ public class Camera {
 	public void lockToPlayer() {
 		if (!lockToPlayer) {
 			angleBuffer = angleAroundPlayer % 360;
-			currentAngleBufferDecreaseConstant = angleBuffer * ANGLE_BUFFER_DECREASE_RATIO;
+			currentAngleBufferDecreaseConstant = angleBuffer * BUFFER_DECREASE_RATIO;
+			pitchBuffer = pitch;
+			currentPitchBufferDecreaseConstant = pitchBuffer * BUFFER_DECREASE_RATIO;
 		}
 		this.lockToPlayer = true;
 	}
